@@ -12,7 +12,6 @@
 .settings
 node_modules
 typings
-wwwroot/app
 
 # Build results
 [Dd]ebug/

@@ -9,11 +9,11 @@
   "author": "jwcarroll",
   "license": "MIT",
   "dependencies": {
-    "angular2": "^2.0.0-alpha.26",
     "bootstrap": "^3.3.5",
     "lodash": "^3.9.3"
   },
   "devDependencies": {
+    "angular2": "^2.0.0-alpha.26",
     "http-server":"^0.8.0",
     "tsd":"^0.6.3",
     "gulp": "^3.9.0",
