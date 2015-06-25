@@ -1,0 +1,29 @@
+{
+  "name": "diving-into-angular",
+  "version": "0.0.1",
+  "description": "Simple Angular2 Application",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jwcarroll",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "^2.0.0-alpha.26",
+    "bootstrap": "^3.3.5",
+    "lodash": "^3.9.3"
+  },
+  "devDependencies": {
+    "http-server":"^0.8.0",
+    "tsd":"^0.6.3",
+    "gulp": "^3.9.0",
+    "gulp-tsc": "^0.10.1",
+    "gulp-typescript": "^2.7.6",
+    "typescript": "^1.5.0-beta"
+  },
+  "scripts": {
+    "postinstall":"tsd install",
+    "prestart":"gulp default",
+    "start":"http-server .\\wwwroot -c-1 -o"
+  }
+}
