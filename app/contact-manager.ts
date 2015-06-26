@@ -1,7 +1,7 @@
 ///<reference path="../custom-types/ng2.custom.d.ts" />
 
 import {Component, View, bootstrap} from 'angular2/angular2';
-import {routerDirectives, routerInjectables, RouteConfig, Router, BrowserLocation} from 'angular2/router';
+import {routerDirectives, routerInjectables, RouteConfig, Router} from 'angular2/router';
 import {StatusBoard} from './status-board/status-board';
 import {StatusBoardFloating} from './status-board/status-board-floating';
 import {TwitterLink} from './twitter/twitter';
@@ -20,12 +20,8 @@ import {TwitterLink} from './twitter/twitter';
 class ContactManager{
 	title: string;
 	
-	constructor(private router:Router, private location:BrowserLocation){
+	constructor(private router:Router){
 		this.title = "Angular2 Databinding Examples";
-		
-		var url = location.path();
-		
-		router.navigate(url);
 	}
 }
 
